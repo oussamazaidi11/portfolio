@@ -1,0 +1,16 @@
+{
+    "redirects": [
+        {
+            "source": "/",
+            "has": [
+                {
+                    "type": "header",
+                    "key": "User-Agent",
+                    "value": "curl/(.*)"
+                }
+            ],
+            "destination": "/profile.txt",
+            "permanent": false
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+[1;32m
+ __      __  _____  _       ____   ___   ___ ___  _____ 
+ \ \    / / | ____| | |     / ___| / _ \ |   |   || ____|
+  \ \  / /  | |__   | |    | |    | | | || | | | || |__  
+   \ \/ /   |  __|  | |    | |    | | | || | | | ||  __| 
+    \  /    | |___  | |___ | |___ | |_| || |   | || |___ 
+     \/     |_____| |_____| \____| \___/ |_|   |_||_____|
+[0m
+[1;32m[+] NAME:     [0m Oussama Zaidi
+[1;32m[+] ROLE:     [0m Fullstack Developer & Security Enthusiast
+[1;32m[+] OS:       [0m Kali Linux (I use Kali btw ;)
+[1;32m[+] LOCATION: [0m Tunisia
+
+[1;32m-- INTRODUCTION --[0m
+Full Stack Developer specialized in building secure, scalable 
+architectures. Experienced in remote web development at 
+Vision age VFX and enterprise networking at Tunisie Telecom.
+
+[1;32m-- COMPETENCES --[0m
+[1;32m* Backend:    [0m NestJS, Node.js, Express, Python
+[1;32m* Frontend:   [0m React.js, TypeScript, Tailwind CSS
+[1;32m* Database:   [0m PostgreSQL, MongoDB, Azure Storage
+[1;32m* Networking: [0m Cisco Configuration, ADSL/VDSL Migration
+[1;32m* Systems:    [0m Linux Administration, Penetration Testing
+
+[1;32m-- RECENT EXPERIENCE --[0m
+[1;32m> Vision age VFX: [0m Fullstack Dev (NestJS, Postgres, Azure)
+[1;32m> Tunisie Telecom:[0m IT Technical (Cisco, Infrastructure)
+
+[1;32m-- CONTACT --[0m
+[1;32m> GitHub:   [0m https://github.com/oussamazaidi11
+[1;32m> LinkedIn: [0m https://linkedin.com/in/zaidi-oussama-
+
+[1;30m(Connection established. Happy hacking.)[0m
