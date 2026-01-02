@@ -1,92 +1,350 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaidi Oussama - Full Stack Developer</title>
+    <title>Oussama Zaidi - Full Stack Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Sora:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': '#050505',
+                        'card-bg': '#111111',
+                        'neon-blue': '#00f3ff',
+                        'neon-purple': '#bc13fe',
+                        'neon-green': '#00ff9d',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Sora', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
-    <nav class="navbar">
-        <div class="logo">&lt;Welcome/&gt;</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+<body class="bg-dark-bg text-white font-sans overflow-x-hidden selection:bg-neon-purple selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-dark-bg/80 backdrop-blur-md border-b border-white/5">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div
+                class="text-2xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-purple">
+                &lt;step up/&gt;
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="hover:text-neon-blue transition-colors">Home</a></li>
+                <li><a href="#about" class="hover:text-neon-blue transition-colors">About</a></li>
+                <li><a href="#portfolio" class="hover:text-neon-blue transition-colors">Portfolio</a></li>
+                <li><a href="#services" class="hover:text-neon-blue transition-colors">Services</a></li>
+                <li><a href="#experience" class="hover:text-neon-blue transition-colors">Experience</a></li>
+                <li><a href="#contact"
+                        class="bg-gradient-to-r from-neon-blue to-neon-purple px-5 py-2 rounded-full text-white font-semibold hover:opacity-90 transition-opacity">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="profile-container">
-                <img src="profile.jpg" alt="Zaidi Oussama" class="profile-pic">
-            </div>
-            <h1>Zaidi Oussama</h1>
-            <h2 class="glitch" data-text="Full Stack Developer">Full Stack Developer</h2>
-            <div class="about-text">
-                <p>I am a motivated student at ISET Kef, currently pursuing my degree in Information System Development.
-                    I am passionate about developing practical skills through academic learning, projects, and
-                    internships.</p>
-                <p>My interests include software development, database management, and I am always eager to learn new
-                    technologies and contribute to innovative solutions.</p>
-            </div>
-            <p class="subtitle">Linux Lover <span class="accent">&&</span> I use Kali btw</p>
-        </div>
-    </section>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+        <!-- Background Glow -->
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-neon-blue/20 rounded-full blur-[128px] -z-10"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neon-purple/20 rounded-full blur-[128px] -z-10"></div>
 
-
-
-    <section id="projects" class="projects">
-        <h2 class="section-title">My Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="card-content">
-                    <h3>E-commerce App</h3>
-                    <p>Full-featured online store built with the <strong>MERN Stack</strong>.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="card-content">
-                    <h3>Chatroom App</h3>
-                    <p>Real-time messaging platform using <strong>MERN Stack</strong> and <strong>Firebase</strong>.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="card-content">
-                    <h3>Coworking Manager</h3>
-                    <p>Space management system with <strong>MERN Stack</strong>, <strong>Docker</strong>, and
-                        <strong>Nginx</strong>.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="card-content">
-                    <h3>Event Management</h3>
-                    <p>Comprehensive event organization platform built with <strong>Laravel</strong>.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="card-content">
-                    <h3>Wallpaper Engine</h3>
-                    <p>Dynamic and interactive wallpaper management system.</p>
-                </div>
+        <div class="container mx-auto px-6 text-center z-10">
+            <p class="text-neon-blue font-heading tracking-widest mb-4 reveal">HELLO, WORLD</p>
+            <h1 class="text-5xl md:text-7xl font-heading font-bold mb-6 leading-tight reveal delay-100">
+                I'm a <br>
+                <span
+                    class="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue via-white to-neon-purple">Full
+                    Stack Software Developer</span>
+            </h1>
+            <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 reveal delay-200">
+                Building scalable web applications and secure architectures.
+            </p>
+            <div class="reveal delay-300">
+                <a href="#portfolio"
+                    class="group relative inline-flex items-center justify-center px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-transparent font-heading focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neon-blue">
+                    <span
+                        class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-r from-neon-blue via-purple-500 to-neon-purple"></span>
+                    <span class="relative">Previous Projects</span>
+                    <svg class="w-5 h-5 ml-2 -mr-1 transition-transform group-hover:translate-x-1" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <p>Let's build something amazing together.</p>
-        <div class="contact-links">
-            <a href="https://www.linkedin.com/in/zaidi-oussama-" target="_blank" class="btn">LinkedIn</a>
-            <a href="https://github.com/oussamazaidi11" target="_blank" class="btn btn-outline">GitHub</a>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-card-bg/30 relative">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/3 reveal">
+                    <div class="relative group">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-neon-blue to-neon-purple rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200">
+                        </div>
+                        <img src="profile.jpg" alt="Oussama Zaidi"
+                            class="relative rounded-2xl w-full object-cover shadow-2xl border border-white/10">
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3 reveal delay-200">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6">About Me</h2>
+                    <div class="space-y-4 text-gray-300 leading-relaxed">
+                        <p>
+                            I am Oussama Zaidi, a motivated student at ISET Kef, currently pursuing my degree in
+                            Information System Development.
+                            I am passionate about developing practical skills through academic learning, projects, and
+                            internships.
+                        </p>
+                        <p>
+                            My expertise lies in building scalable web applications using modern technologies. I have
+                            experience in remote web development
+                            at Vision age VFX and enterprise networking at Tunisie Telecom.
+                        </p>
+                        <p>
+                            I am a security enthusiast (Kali Linux user) and always eager to learn new technologies to
+                            contribute to innovative solutions.
+                        </p>
+                    </div>
+                    <div class="mt-8 flex gap-4">
+                        <a href="#"
+                            class="px-6 py-2 border border-neon-blue text-neon-blue rounded-full hover:bg-neon-blue hover:text-black transition-all">Download
+                            CV</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-12 text-center reveal">Featured Projects</h2>
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Projects will be loaded here via JS -->
+            </div>
+            <div class="text-center mt-12 reveal">
+                <a href="https://github.com/oussamazaidi11" target="_blank"
+                    class="inline-block px-8 py-3 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 transition-all">
+                    View All on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-card-bg/30">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-12 text-center reveal">What I Do</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div
+                    class="service-card p-6 rounded-2xl bg-card-bg border border-white/5 hover:border-neon-blue/50 transition-all duration-300 group reveal">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-neon-blue/10 flex items-center justify-center mb-4 group-hover:bg-neon-blue/20 transition-colors">
+                        <i class="fas fa-code text-neon-blue text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-neon-blue transition-colors">Web Development</h3>
+                    <p class="text-gray-400 text-sm">Building responsive and performant web applications using modern
+                        frameworks.</p>
+                </div>
+                <!-- Service 2 -->
+                <div
+                    class="service-card p-6 rounded-2xl bg-card-bg border border-white/5 hover:border-neon-purple/50 transition-all duration-300 group reveal delay-100">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-neon-purple/10 flex items-center justify-center mb-4 group-hover:bg-neon-purple/20 transition-colors">
+                        <i class="fas fa-mobile-alt text-neon-purple text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-neon-purple transition-colors">Mobile App Dev
+                    </h3>
+                    <p class="text-gray-400 text-sm">Creating cross-platform mobile applications with Flutter and React
+                        Native.</p>
+                </div>
+                <!-- Service 3 -->
+                <div
+                    class="service-card p-6 rounded-2xl bg-card-bg border border-white/5 hover:border-neon-green/50 transition-all duration-300 group reveal delay-200">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-neon-green/10 flex items-center justify-center mb-4 group-hover:bg-neon-green/20 transition-colors">
+                        <i class="fas fa-paint-brush text-neon-green text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-neon-green transition-colors">UI/UX Design</h3>
+                    <p class="text-gray-400 text-sm">Designing intuitive and visually appealing user interfaces.</p>
+                </div>
+                <!-- Service 4 -->
+                <div
+                    class="service-card p-6 rounded-2xl bg-card-bg border border-white/5 hover:border-white/50 transition-all duration-300 group reveal delay-300">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
+                        <i class="fas fa-server text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 group-hover:text-white transition-colors">Backend Arch</h3>
+                    <p class="text-gray-400 text-sm">Designing robust and scalable server-side architectures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience/Skills Section -->
+    <section id="experience" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold mb-12 text-center reveal">Tech Stack</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 text-center">
+                <!-- Tech Items -->
+                <div class="tech-item reveal"><i
+                        class="fab fa-css3-alt text-4xl mb-2 text-gray-300 hover:text-[#1572B6] transition-colors"></i>
+                    <p class="text-sm">CSS3</p>
+                </div>
+                <div class="tech-item reveal delay-100"><i
+                        class="fab fa-react text-4xl mb-2 text-gray-300 hover:text-[#61DAFB] transition-colors"></i>
+                    <p class="text-sm">React.js</p>
+                </div>
+                <div class="tech-item reveal delay-200"><i
+                        class="fab fa-html5 text-4xl mb-2 text-gray-300 hover:text-[#E34F26] transition-colors"></i>
+                    <p class="text-sm">HTML5</p>
+                </div>
+                <div class="tech-item reveal delay-300"><i
+                        class="fab fa-java text-4xl mb-2 text-gray-300 hover:text-[#007396] transition-colors"></i>
+                    <p class="text-sm">Java</p>
+                </div>
+                <div class="tech-item reveal delay-400"><i
+                        class="fab fa-js text-4xl mb-2 text-gray-300 hover:text-[#F7DF1E] transition-colors"></i>
+                    <p class="text-sm">JavaScript</p>
+                </div>
+                <div class="tech-item reveal delay-500"><i
+                        class="fab fa-node-js text-4xl mb-2 text-gray-300 hover:text-[#339933] transition-colors"></i>
+                    <p class="text-sm">Node.js</p>
+                </div>
+                <div class="tech-item reveal delay-600"><i
+                        class="fab fa-python text-4xl mb-2 text-gray-300 hover:text-[#3776AB] transition-colors"></i>
+                    <p class="text-sm">Python</p>
+                </div>
+                <div class="tech-item reveal delay-700"><i
+                        class="fab fa-docker text-4xl mb-2 text-gray-300 hover:text-[#2496ED] transition-colors"></i>
+                    <p class="text-sm">Docker</p>
+                </div>
+                <div class="tech-item reveal delay-100"><i
+                        class="fas fa-server text-4xl mb-2 text-gray-300 hover:text-[#009639] transition-colors"></i>
+                    <p class="text-sm">Nginx</p>
+                </div>
+                <div class="tech-item reveal delay-200"><i
+                        class="fab fa-microsoft text-4xl mb-2 text-gray-300 hover:text-[#0078D4] transition-colors"></i>
+                    <p class="text-sm">Azure</p>
+                </div>
+                <div class="tech-item reveal delay-300"><i
+                        class="fab fa-linux text-4xl mb-2 text-gray-300 hover:text-[#FCC624] transition-colors"></i>
+                    <p class="text-sm">Linux</p>
+                </div>
+                <div class="tech-item reveal delay-400"><i
+                        class="fab fa-github text-4xl mb-2 text-gray-300 hover:text-[#181717] transition-colors"></i>
+                    <p class="text-sm">GitHub</p>
+                </div>
+                <div class="tech-item reveal delay-500"><i
+                        class="fas fa-fire text-4xl mb-2 text-gray-300 hover:text-[#FFCA28] transition-colors"></i>
+                    <p class="text-sm">Firebase</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-t from-neon-purple/10 to-transparent">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row gap-12 max-w-6xl mx-auto">
+                <!-- Contact Info -->
+                <div class="w-full md:w-1/2 reveal">
+                    <h2 class="text-3xl md:text-4xl font-heading font-bold mb-6">Let's Connect</h2>
+                    <p class="text-gray-400 mb-8">
+                        I'm currently available for freelance work or full-time opportunities.
+                        If you have a project that needs some creative touch, let's chat.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-neon-blue"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Location</h4>
+                                <p class="text-gray-400">Tunisia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center">
+                                <i class="fas fa-envelope text-neon-purple"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-gray-400">oussamazaidi499@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 mt-8">
+                            <a href="https://www.linkedin.com/in/zaidi-oussama-" target="_blank"
+                                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-neon-blue hover:text-black transition-all">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/oussamazaidi11" target="_blank"
+                                class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-neon-purple hover:text-white transition-all">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="w-full md:w-1/2 reveal delay-200">
+                    <form class="space-y-6 bg-card-bg p-8 rounded-2xl border border-white/5">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm text-gray-400 mb-2">Name</label>
+                                <input type="text"
+                                    class="w-full bg-dark-bg border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-neon-blue transition-colors"
+                                    placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label class="block text-sm text-gray-400 mb-2">Email</label>
+                                <input type="email"
+                                    class="w-full bg-dark-bg border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-neon-blue transition-colors"
+                                    placeholder="Your email">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-2">Subject</label>
+                            <input type="text"
+                                class="w-full bg-dark-bg border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:border-neon-blue transition-colors"
+                                placeholder="Project Discussion">
+                        </div>
+                        <div>
+                            <label class="block text-sm text-gray-400 mb-2">Message</label>
+                            <textarea
+                                class="w-full bg-dark-bg border border-white/10 rounded-lg px-4 py-3 h-32 focus:outline-none focus:border-neon-blue transition-colors"
+                                placeholder="Welcome to my space say anything"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-neon-blue to-neon-purple text-white font-bold py-3 rounded-lg hover:opacity-90 transition-opacity">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-gray-500 text-sm border-t border-white/5">
+        <p>&copy; 2026 Oussama Zaidi. All rights reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
